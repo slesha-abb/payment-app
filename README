@@ -38,3 +38,6 @@ sudo vi /etc/systemd/system/nexus.service
 sudo systemctl start nexus
 sudo systemctl status nexus
 sudo systemctl enable nexus
+
+http://ec2-3-21-236-148.us-east-2.compute.amazonaws.com:8081/
+https://www.fosstechnix.com/how-to-install-nexus-repository-on-ubuntu/
