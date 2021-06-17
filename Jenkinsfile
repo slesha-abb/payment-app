@@ -9,13 +9,18 @@ pipeline {
         stage('Build') {
             steps { 
                 git branch: 'main', url: 'https://github.com/slesha-abb/payment-app.git'
-                sh "mvn -Dmaven.test.failure.ignore=true clean install sonar:sonar -Dsonar.host.url='http://172.31.27.16:9000/'"
+                sh "mvn -Dmaven.test.failure.ignore=true clean deploy sonar:sonar -Dsonar.host.url='http://172.31.27.16:9000/'"
             }
             post {
                 success {
                     junit '**/target/surefire-reports/TEST-*.xml'
                     archiveArtifacts 'target/*.jar'
                 }
+            }
+          }
+        stage('breakbuild') {
+            steps { 
+                sh "echo check the sonarqibe job status."
             }
           }
         stage('deploy') {
