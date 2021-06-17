@@ -13,7 +13,6 @@ sudo visudo
 sudo chown -R nexus:nexus /opt/nexus
 sudo chown -R nexus:nexus /opt/sonatype-work
  
-
 sudo su - nexus
 sudo vi /opt/nexus/bin/nexus.rc
    run_as_user="nexus"
