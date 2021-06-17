@@ -15,4 +15,21 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+    <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>paymentapp-releases</id>
+      <name>paymentapp-releases</name>
+      <url>http://18.222.41.140:8081/repository/paymentapp-releases/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>paymentapp-snapshots</id>
+      <name>paymentapp-snapshots</name>
+      <url>http://18.222.41.140:8081/repository/paymentapp-snapshots/</url>
+      <layout>legacy</layout>
+    </snapshotRepository>
+   
+  </distributionManagement>
 </project>
