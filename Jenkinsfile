@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps { 
                 git branch: 'main', url: 'https://github.com/slesha-abb/payment-app.git'
-                sh "mvn -Dmaven.test.failure.ignore=true clean deploy sonar:sonar -S settings.xml -Dsonar.host.url='http://172.31.27.16:9000/'"
+                sh "mvn -Dmaven.test.failure.ignore=true clean deploy sonar:sonar --settings settings.xml -Dsonar.host.url='http://172.31.27.16:9000/'"
             }
             post {
                 success {
