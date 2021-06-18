@@ -20,14 +20,14 @@
       <uniqueVersion>false</uniqueVersion>
       <id>paymentapp-releases</id>
       <name>paymentapp-releases</name>
-      <url>http://18.222.41.140:8081/repository/paymentapp-releases/</url>
+      <url>http://172.31.24.66:8081/repository/paymentapp-releases/</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
       <id>paymentapp-snapshots</id>
       <name>paymentapp-snapshots</name>
-      <url>http://18.222.41.140:8081/repository/paymentapp-snapshots/</url>
+      <url>http://172.31.24.66:8081/repository/paymentapp-snapshots/</url>
       <layout>legacy</layout>
     </snapshotRepository>
    
