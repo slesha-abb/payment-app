@@ -20,7 +20,7 @@ pipeline {
           }
         stage('breakbuild') {
             steps { 
-                sh "echo check the sonarqibe job status."
+                sh "sh breakbuild.sh 'http://172.31.27.16:9000/' 'a7adfd5c4c528923e44403aaa73e959b1f4580ff'"
             }
           }
         stage('deploy') {
